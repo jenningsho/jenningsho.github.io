@@ -1,0 +1,25 @@
+.skill_class{
+    height:100vh;
+    background-color: #3A353F;
+    
+}
+
+.skill_section_class{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.skill_article_class{
+    margin: 20px 30px;
+    border: 2px solid rgb(168, 168, 168);
+    background-color: #EAE2CF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.skill_section_class h3{
+    color:#D24F6B;
+}
