@@ -1,67 +1,15 @@
 *, ::before, ::after{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
+
 body{
-    background-color:  #ffffff;
-}
-.container{
-    display: grid;
-    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr; /* header , title , skills , project , footer */
-    /*grid-gap: .5rem;*/
-}
-.header_class{
-    grid-column: span 6;
-    background-color: orange;
-}
-.title_class{
-    grid-column: span 6;
-   /* background-color: #ffc0cb;*/
-}
-.skill_class{
-    grid-column: span 6;
-    border : 2px solid green;
-}
-.project_class{
-    grid-column: span 6;
-    background-color: grey;
-}
-.footer_class{
-    grid-column: span 6;
-    background-color: violet;
+    font-family: "Poppins";
+    display:grid;
 }
 
-
-
-h1,h2,h3{
-    color: #E9F4FF ; /* Moon white */
-    text-align: center;  
-    font-family: "Source Sans Pro",sans-serif;
-    letter-spacing: 2.2px;
-}
-h1{
-    font-size: 7rem; /* taille globale h2 */
-}
-h2{
-    font-size: 5rem; /* taille globale h2 */
-}
-h3{
-    font-size: 3rem;/* taille globale h3 */
-    color:#C89B3C;
-}
-
-h4{
-    font-size: 2rem;
-}
-h5{
-    font-size: 1rem;
-}
-
-p{
-    font-family: "Source Sans Pro",sans-serif;
-}
-
-/*   enable smooth scrolling for the whole page*/
 html {
     scroll-behavior: smooth;
   }

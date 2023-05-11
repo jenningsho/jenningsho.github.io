@@ -1,0 +1,47 @@
+.about-me{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/ressources/images/anime-night-background-8pqhuxk631bliu6p.jpg');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    
+}
+.about-me div:first-child{
+    flex:1;
+    text-align: left;
+    margin-left:30px;
+}
+.about-me div:first-child h1{
+   color: white;
+   font-size: 60px;
+   letter-spacing: 1px;
+}
+.about-me div:first-child p{
+    color: rgba(221, 221, 36, 0.699);
+    font-size: 20px;
+    line-height: 3;
+    letter-spacing: 10px;
+}
+.about-me div:last-child{
+    flex:1;
+    text-align: left;
+    margin-right:30px;
+}
+.about-me div:last-child p{
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* longueur max 900px en mobile*/
+@media screen and (max-width: 900px){
+
+    .about-me div:first-child h1{
+        font-size: 35px;
+    }
+    .about-me div:last-child p{
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
