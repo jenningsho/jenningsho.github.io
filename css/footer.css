@@ -1,0 +1,34 @@
+footer{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../ressources/images/bg_footer.png');
+    background-size: cover;
+    padding: 200px 0;
+    top: 100vh;
+    bottom: 0;
+}
+
+footer .share p{
+    margin: 0 auto 20px;
+    width: 75px;    
+}
+
+footer .share ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .share ul li{
+    color: inherit;
+    text-decoration: none;
+    list-style: none;  
+}
+
+footer .copy {
+    color: #000;
+    font-size: 12px;
+}
+

@@ -1,99 +1,84 @@
 header{
-    height: 100vh;
-    width: 100vw;
-    /* background-image: url("../ressources/images/baki-the-grappler-baki-hanma-anime-boys-manga-hd-wallpaper-preview.jpg"); */
-    background-size: cover;
-}
-
-
-.navbar{
-    position: absolute;
-    padding: 50px;
-    width: 100%;
-    box-sizing: border-box;
+    background: #a70819;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    height: 80px;
+    left: auto;
+    position: fixed;
+    right: 0;
+    width: 80px;
+    z-index: 100;
+    text-align: center;
+    cursor: pointer;
 }
 
+/* MENU HAMBURGER*/
+/* .navbar .menu-hamburger{
+    display: none;
+    pour le placer ou l'on veut
+    position: fixed;
+    top: 50px;
+    right : 50px;
+    width: 35px;
+} */
+
+/* .navbar .menu-hamburger{
+    display: block;
+    z-index: 5;
+    border: 2px solid red;
+} */
+
+
+
+/* BARRE DE NAVIGATION */
+/* couleur des a du navbar*/
 .navbar a{
     color: rgb(255, 255, 255);
 }
-
-.navbar .logo{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
 .navbar .nav-links ul{
     display: flex;
-}
-.navbar .nav-links ul li{
-    margin: 0 25px;
 }
 .navbar .nav-links ul li:hover a{
     color:rgb(255, 0, 0);
 }
-
-/* menu hamburger*/
-.navbar .menu-hamburger{
-    display: none;
-    /* pour le placer ou l'on veut*/
+.nav-links{
+    z-index: 4;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(34, 34, 34, 0.377);
+    backdrop-filter: blur(2px);
+    width: 100%; /*la taille de l'écran*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left : -100% ; /* position par défaut du menu à -100% */
+    transition: all 1s ease; /* transition du volet de gauche a droite */
+}
+/* classe mobile menu */
+.nav-links.mobile-menu{
+margin-left: 0; /* position quand la classe mobile-menu sera active*/
+}
+.nav-links ul{
+    display :flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.navbar .logo{
     position: absolute;
     top: 50px;
-    right : 50px;
-    width: 35px;
+    left: 50px;
+    font-size: 2rem;
+    font-weight: bold;
 }
-
-
-
 
 /* longueur max 900px en mobile*/
 @media screen and (max-width: 900px){
-
-    .navbar{
-        padding: 0;
-    }
-    .navbar .menu-hamburger{
-        display: block;
-    }
-    
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(34, 34, 34, 0.377);
-        backdrop-filter: blur(2px);
-        width: 100%; /*la taille de l'écran*/
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left : -100% ; /* position par défaut du menu à -100% */
-        transition: all 1s ease; /* transition du volet de gauche a droite */
-    }
-
-    /* classe mobile menu */
-    .nav-links.mobile-menu{
-    margin-left: 0; /* position quand la classe mobile-menu sera active*/
-    }
-
-    .nav-links ul{
-        display :flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .nav-links ul li{
-        margin: 25px 0;
-        font-size: 1.2rem;
-    }
-    
-    .navbar .logo{
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
 }

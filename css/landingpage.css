@@ -1,0 +1,22 @@
+/* container div video*/
+#background_video{
+    /* If the width property is set to 100%, the video player will be responsive and scale up and down */
+    width: 100% !important;
+	height: auto !important;
+}
+
+#myVideo {
+    /* position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%; */
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
