@@ -1,7 +1,7 @@
 .skills{
     height: 100vh;
     width: 100vw;
-    background-image: url('../ressources/images/anime-night-background-8pqhuxk631bliu6p.jpg');
+    background-image: url('../ressources/images/wallpapersden.com_anime-girl-hd-night-fun_1920x1080.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -12,5 +12,4 @@
 .skills .skill-info p{
     font-size: 18px;
     text-align: center;
-   
 }

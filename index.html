@@ -4,18 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jennings's Portfolio</title>
+    <title>HOME | Jennings's PortFolio</title>
     <link rel="shortcut icon" href="./ressources/me/mePainted.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <div id="background_video">
-        <video id="myVideo" autoplay muted loop playsinline style="pointer-events: none">
-            <source src="./ressources/videos/anime-84574.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
     <!-- Barre de navigation-->
     <nav class="navbar">
         <a href="#" class="logo">JENNINGS</a>
@@ -28,13 +22,20 @@
                 <li><a href="./project.html">Projets</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
-            
+        </div>   
     </nav>
     <!-- Header-->
     <header>
         <img src="./ressources/logos/menu-btn.png" alt="menu hamburger" class="menu-hamburger" width="40px">
     </header>
+    <main class="backgroundVideo_class">
+        <div id="background_video">
+            <video id="myVideo" autoplay muted loop playsinline style="pointer-events: none">
+                <source src="./ressources/videos/anime-84574.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </main>
     <footer>
         <div class="share">
             <p>
@@ -45,8 +46,7 @@
             </ul>
         </div>
         <p class="copy">©Jennings HO / 2023 </p>
-
     </footer>
-
+    
 </body>
 </html>
