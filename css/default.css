@@ -7,9 +7,45 @@
 
 body{
     font-family: "Poppins";
+    /*font-family: "Source Sans Pro",sans-serif;*/
     display:grid;
+    background: url("../ressources/images/baki_bg.jpg") center top fixed;
+    background-size: auto;
+    background-size: cover;
 }
 
+/*  le defilement est doux  */
 html {
     scroll-behavior: smooth;
-  }
+    
+}
+
+h1{
+    font-size: 60px;  
+    color: rgb(189, 12, 12);
+    letter-spacing: 1px;
+}
+
+p{
+    color: rgb(105, 105, 105);
+}
+
+.intro_class{
+    z-index : 10;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    animation: introduction 4s linear ;
+}
+
+@keyframes introduction{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

@@ -9,6 +9,8 @@
     align-items: center;
 }
 
-.skills .skill-info div:last-child{
-    
+.skills .skill-info p{
+    font-size: 18px;
+    text-align: center;
+   
 }

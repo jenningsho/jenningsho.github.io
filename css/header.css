@@ -1,7 +1,7 @@
 header{
     height: 100vh;
     width: 100vw;
-    background-image: url("../ressources/images/wallpapersden.com_anime-girl-hd-night-fun_1920x1080.jpg");
+    /* background-image: url("../ressources/images/baki-the-grappler-baki-hanma-anime-boys-manga-hd-wallpaper-preview.jpg"); */
     background-size: cover;
 }
 
@@ -17,7 +17,7 @@ header{
 }
 
 .navbar a{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .navbar .logo{
@@ -31,8 +31,8 @@ header{
 .navbar .nav-links ul li{
     margin: 0 25px;
 }
-.navbar .nav-links ul li:active a{
-    color:greenyellow;
+.navbar .nav-links ul li:hover a{
+    color:rgb(255, 0, 0);
 }
 
 /* menu hamburger*/
