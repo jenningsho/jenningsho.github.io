@@ -4,32 +4,16 @@ header{
     align-items: center;
     justify-content: center;
     height: 80px;
-    left: auto;
+    width: 80px;
     position: fixed;
     right: 0;
-    width: 80px;
     z-index: 100;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; 
+    /*   grid-area: row-start / column-start / row-end / column-end
+    */
+    grid-area : 1 / 12 / 6 / 12
 }
-
-/* MENU HAMBURGER*/
-/* .navbar .menu-hamburger{
-    display: none;
-    pour le placer ou l'on veut
-    position: fixed;
-    top: 50px;
-    right : 50px;
-    width: 35px;
-} */
-
-/* .navbar .menu-hamburger{
-    display: block;
-    z-index: 5;
-    border: 2px solid red;
-} */
-
-
 
 /* BARRE DE NAVIGATION */
 /* couleur des a du navbar*/
@@ -40,7 +24,7 @@ header{
     display: flex;
 }
 .navbar .nav-links ul li:hover a{
-    color:rgb(255, 0, 0);
+    color:#a70819;
 }
 .nav-links{
     z-index: 4;
@@ -71,12 +55,15 @@ margin-left: 0; /* position quand la classe mobile-menu sera active*/
     font-size: 1.2rem;
     list-style: none;
 }
-.navbar .logo{
+
+.logo{
     position: absolute;
     top: 50px;
     left: 50px;
     font-size: 2rem;
     font-weight: bold;
+    grid-area: 1 / 1 / 1 / 1;
+    color: white;
 }
 
 /* longueur max 900px en mobile*/

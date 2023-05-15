@@ -1,19 +1,17 @@
 footer{
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*
+    grid-area: row-start / column-start / row-end / column-end
+    */
+    grid-area: 3 / 1 / 5 / 13 ;
     background: url('../ressources/images/bg_footer.png');
     background-size: cover;
     padding: 200px 0;
-    top: 100vh;
-    bottom: 0;
 }
 
+/* Liens Linkedin (Mise en forme) */
 footer .share p{
     margin: 0 auto 20px;
-    width: 75px;    
+    text-align: center;   
 }
 
 footer .share ul{
@@ -21,14 +19,11 @@ footer .share ul{
     justify-content: center;
     align-items: center;
 }
-footer .share ul li{
-    color: inherit;
-    text-decoration: none;
-    list-style: none;  
-}
 
 footer .copy {
     color: #000;
     font-size: 12px;
+    padding: 50px 0;
+    text-align: center;
 }
 
