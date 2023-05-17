@@ -1,8 +1,84 @@
 .project_main_class{
-    grid-area : 1 / 1 / 4 / 13;
+    grid-area : 1 / 1 / 3 / 13;
+}
+
+.project_info h1{
+
+}
+.project_info p{
+    font-size: 16px;
+}
+
+.project_info{
+    background-color: black;
+    height: 100vh;
+    border: 2px solid red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
 TUTO pour créer un slide JS
 https://www.youtube.com/watch?v=ki9c7IclXGk
 */
+
+.slider{
+    position: relative;
+    height: 100vh;
+    border: 2px solid green;
+}
+
+.img_slider{
+    opacity: 0;
+    transition: opacity 0.5;
+}
+
+.img_slider.active{
+    opacity: 1;
+}
+
+.slider-content{
+    display: flex;
+}
+
+.slider-content div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next , .prev{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next{
+    right: 1rem;
+}
+
+.prev{
+    left: 1rem;
+}
+
+.project1{
+background-color: red;
+}
+.project2{
+    background-color: green;
+
+}
+.project3{
+    background-color: yellow;
+
+}
