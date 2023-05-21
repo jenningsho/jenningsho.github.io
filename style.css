@@ -3,6 +3,7 @@
 @import url("./css/header.css"); /* css comportant le header ( logo , menu hamburger) */
 @import url("./css/footer.css"); /*css footer : se trouve sur toute les pages*/
 @import url("./css/aboutme.css");
+@import url("./css/horizontally.min.css");
 @import url("./css/skill.css");
 @import url("./css/project.css");
 

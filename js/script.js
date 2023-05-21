@@ -64,3 +64,9 @@ prev.addEventListener("click", function(){
 
 })
 
+
+new horizontally({
+    arrowButtons: true,
+    pageSelector: false,
+    wrapper: '#myCarousel',
+});

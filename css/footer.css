@@ -2,28 +2,29 @@ footer{
     /*
     grid-area: row-start / column-start / row-end / column-end
     */
-    grid-area: 3 / 1 / 5 / 13 ;
-    background: url('../ressources/images/bg_footer.png');
+    grid-area: 2 / 1 / 5 / 13 ;
     background-size: cover;
-    padding: 200px 0;
-}
-
-/* Liens Linkedin (Mise en forme) */
-footer .share p{
-    margin: 0 auto 20px;
-    text-align: center;   
-}
-
-footer .share ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 5rem;
+}
+
+footer .share p{
+    text-align: center;
+}
+footer .share ul{
+    text-align: center;
 }
 
 footer .copy {
     color: #000;
-    font-size: 12px;
-    padding: 50px 0;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
 }
 
+@media screen and (max-width: 900px)
+{
+
+}

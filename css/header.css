@@ -12,7 +12,7 @@ header{
     cursor: pointer; 
     /*   grid-area: row-start / column-start / row-end / column-end
     */
-    grid-area : 1 / 12 / 6 / 12
+    /* grid-area : 1 / 12 / 6 / 12 */
 }
 
 /* BARRE DE NAVIGATION */
@@ -64,8 +64,12 @@ margin-left: 0; /* position quand la classe mobile-menu sera active*/
     font-weight: bold;
     grid-area: 1 / 1 / 1 / 1;
     color: white;
+    z-index: 99;
 }
 
 /* longueur max 900px en mobile*/
 @media screen and (max-width: 900px){
+    .logo{
+        font-size: 20px;
+    }
 }
