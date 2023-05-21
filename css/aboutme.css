@@ -1,24 +1,31 @@
+/* position absolute pour faire remonter le footer */
+.about-me_main_class{
+    grid-area: 1 / 1 / 3 / 13;
+}
+
+
 /*  Mise en forme: flebox et image. */
 .about-me{
     background-image: url('/ressources/images/david-schultz-SrewPUfo2c0-unsplash.jpg');
     background-size:cover;
     display:flex;
     align-items: center;
-    height: 100%;
-    
+    height: 130vh;
 }
 /*  Premiere div : positionnement et la mise en forme */
 .about-me div:first-child{
     flex:1;
     text-align: left;
-    margin-left:30px;
+    margin-left:40px;
+}
+.about-me div:first-child h1{
+    font-size: 3rem;
 }
 .about-me div:first-child p{
     color: rgba(221, 221, 36, 0.699);
-    font-size: 20px;
+    font-size: 22px;
     line-height: 3;
     letter-spacing: 10px;
-    
 }
 /*  Deuxieme div : positionnement et la mise en forme*/
 .about-me div:last-child{
@@ -28,24 +35,44 @@
 }
 .about-me div:last-child p{
     font-size: 25px;
-    line-height: 80px;
-  letter-spacing: 2px;
+    line-height: 70px;
+    letter-spacing: 2px;
 }
 
-/* position absolute pour faire remonter le footer */
-.about-me_main_class{
-    grid-area: 1 / 1 / 3 / 13;
-}
 
 /* longueur max 900px en mobile*/
 @media screen and (max-width: 900px){
+    .about-me{
+        padding: 200px  0;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .about-me div:first-child{
+        text-align: center;
+        margin-left: 0;
+    }
     .about-me div:first-child h1{
-        font-size: 35px;
+        font-size: 1rem;
+    }
+    .about-me div:first-child p{
+        font-size: 8px;
+        line-height: 5;
+        letter-spacing: 3px;
+    }
+
+    .about-me div:last-child{
+        text-align: center;
+        padding: 50px 0;
+        margin : 0 20px;
     }
     .about-me div:last-child p{
-        font-size: 18px;
-        line-height: 40px;
+        
+        font-size: 10px;
+        line-height: 30px;
+        letter-spacing: 1px;
     }
 }
 

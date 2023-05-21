@@ -14,6 +14,7 @@ html {
     scroll-behavior: smooth;
     
 }
+
 h1{
     font-size: 50px;  
     color:#a70819;
@@ -27,7 +28,6 @@ p{
 /* Grid de 12 colomnes et 4 lignes*/
 #grid{
     display:grid;
-    grid-template-columns:  repeat(12 , 1fr);
-    /* grid-gap: 1rem; */
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: repeat(4,1fr);
 }

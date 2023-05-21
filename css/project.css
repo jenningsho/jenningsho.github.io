@@ -2,9 +2,6 @@
     grid-area : 1 / 1 / 3 / 13;
 }
 
-.project_info h1{
-
-}
 .project_info p{
     font-size: 16px;
 }
@@ -19,12 +16,34 @@
     align-items: center;
 }
 
+section{
+    height: auto;
+    border: 2px solid green;
+}
+
+.splide ul li div{
+    width: 50%;
+}
+
+.splide ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide ul li div{
+    background-color: grey;
+    height: 100vh;
+    width: 100vw;
+}
+
 /*
 TUTO pour créer un slide JS
 https://www.youtube.com/watch?v=ki9c7IclXGk
 */
 
-.slider{
+/* .slider{
     position: relative;
     height: 100vh;
     border: 2px solid green;
@@ -81,4 +100,5 @@ background-color: red;
 .project3{
     background-color: yellow;
 
-}
+} */
+

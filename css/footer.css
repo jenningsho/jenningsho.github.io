@@ -1,13 +1,14 @@
-footer{
-    /*
+/* footer{
+    
     grid-area: row-start / column-start / row-end / column-end
-    */
-    grid-area: 2 / 1 / 5 / 13 ;
-    background-size: cover;
+    
+    grid-area: 3 / 1 / 5 / 13 ;
+    border: 5px solid green;
+    background-color: grey;
+    
     display: flex;
-    justify-content: center;
     align-items: center;
-    line-height: 5rem;
+    justify-content: center;
 }
 
 footer .share p{
@@ -22,9 +23,54 @@ footer .copy {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+} */
+
+footer{
+    grid-area : 3 / 1 / 5 / 13 ;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.share{
+    text-align: center;
+    line-height: 3rem;
+}
+.share p{
+    color: black
 }
 
-@media screen and (max-width: 900px)
-{
 
+.copyright{
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+.copyright p{
+    color: black;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        justify-content: center;
+        align-items: center;
+    }
+    .share p img{
+        height: 18px;
+
+    }
+    .share p{
+        font-size: 10px;
+    }
+    
+    .footer_link ul li a img{
+        height: 20px
+    }
+
+    .copyright p{
+        padding-top: 20px;
+        font-size: 10px;
+    }
 }

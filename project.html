@@ -8,11 +8,13 @@
     <link rel="shortcut icon" href="./ressources/me/mePainted.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="./js/script.js" defer></script>
+    <script src="./js/splide.min.js" defer></script>
+    <script src="./js/todoscript.js" defer></script>
 </head>
 <body>
-<!-- Barre de navigation-->
 <div id="grid">
 
+    <!-- Barre de navigation-->
     <nav class="navbar">
         <a href="#" class="logo">JENNINGS</a>
         <div class="nav-links">
@@ -27,6 +29,7 @@
     </nav>
     <!-- Header-->
     <header>
+        <!-- menu hamburger-->
         <img src="./ressources/logos/menu-btn.png" alt="menu hamburger" class="menu-hamburger" width="40px">
     </header>
     <!-- A propos de moi-->
@@ -37,7 +40,7 @@
             <p>Pour visualiser les différents projets, vous pouvez vous servir du slide ci dessous.</p>
         </div>
 
-        <div class="slider">
+        <!-- <div class="slider">
 
             <div class="slider-content">
                 <div class="img_slider project1 active">PROJET 1</div>
@@ -51,7 +54,30 @@
             <div class="prev">
                 <button>Button</button>
             </div>
-        </div>
+        </div> -->
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        
+                        <div  class="header">
+                            <h2>Liste des choses à faire</h2>
+                            <input type="text"  placeholder="Titre...">
+                            <span class="addBtn">Ajouter</span>
+                        </div>
+                        <ul class="todo-items"></ul>    
+
+
+
+
+
+                      </li>
+                      <li class="splide__slide">Slide 02</li>
+                      <li class="splide__slide">Slide 03</li>
+                  </ul>
+            </div>
+          </section>
+
 
     </main>
     <footer>
@@ -59,11 +85,21 @@
             <p>
                 <img src="./ressources/logos/share.png" alt="share" >
             </p>
+            <p>Liens disponible ci-dessous pour me contacter</p>
+        </div>
+        <div class="footer_link">
             <ul>
-                <li>Linkedin Logo</li>
+                <li> 
+                    <a href="# ">
+                        <img src="./ressources/logos/linkedin.png" alt="linkedin">
+                    </a>
+                </li>
+                    
             </ul>
         </div>
-        <p class="copy">©Jennings HO / 2023 </p>
+        <div class="copyright">
+            <p>Copyright © 2023 / Jennings HO. Tout droits réservés</p>
+        </div>
     </footer>
     
 </div>
