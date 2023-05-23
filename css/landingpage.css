@@ -41,16 +41,26 @@
 {   
 
     .welcome h1{
-        font-size: 18px;
+        font-size: 22px;
         animation: welcome_mobile 4s ease;
     }
         /* Animation sur le titre*/
     @keyframes welcome_mobile {
         0%{
             opacity: 0;
+            transform: scale(0);
+        }
+        25%{
+            opacity: 0.25;
+            transform: scale(1);
+        }
+        50%{
+            opacity: 0.5;
+            transform: scale(3);
         }
         100%{
-            opacity: 100%;
+            opacity: 1;
+            transform: scale(1);
         }
     }
 }
