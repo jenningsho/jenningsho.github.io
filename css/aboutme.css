@@ -12,26 +12,54 @@
     align-items: center;
     height: 130vh;
 }
+/*
+
+*/
 /*  Premiere div : positionnement et la mise en forme */
-.about-me div:first-child{
+.about-me .about-me-content_first{
     flex:1;
     text-align: left;
-    margin-left:40px;
+    margin-left: 40px;
+    animation : slideFromLeft 1s linear;
 }
-.about-me div:first-child h1{
+
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX((100%));
+    }
+    
+}
+
+
+.about-me .about-me-content_first h1{
     font-size: 3rem;
 }
-.about-me div:first-child p{
+.about-me .about-me-content_first p{
     color: rgba(221, 221, 36, 0.699);
     font-size: 22px;
     line-height: 3;
     letter-spacing: 10px;
+
 }
 /*  Deuxieme div : positionnement et la mise en forme*/
 .about-me div:last-child{
     flex:1;
     text-align: left;
     margin-right:30px;
+    animation : slideFromRight 1s linear;
+}
+
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX((-100%));
+    }
+    
 }
 .about-me div:last-child p{
     font-size: 25px;

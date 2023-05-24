@@ -1,6 +1,7 @@
 /*  Mise en forme du main */
 .skill_main_class{
     grid-area: 1 / 1 / 3 / 13;
+   
 }
 
 .skills{
@@ -17,7 +18,19 @@
     padding: 100px;
 }
 .skills .skill-info h1{
+    padding: 150px 0;
     margin-bottom: 50px;
+    animation: titleAnimate 4s linear;
+}
+
+/* Animation sur le titre*/
+@keyframes titleAnimate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 .skills .skill-info p{
     font-size: 18px;
@@ -26,11 +39,41 @@
     line-height: 2rem;
 }
 
+.skills .skill-info p:nth-of-type(even){
+    animation : slideFromLeft 1.5s linear;
+}
+.skills .skill-info p:nth-of-type(odd){
+    animation : slideFromRight 1.5s linear;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX((100%));
+        opacity: 1;
+    }
+}
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX((-100%));
+        opacity: 1;
+    }
+}
+
+
+
 /*  Mise en forme du bloc des svg*/
 .svg_list{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 }
 
 /* taille des svg*/
@@ -43,7 +86,7 @@
 .svg_list ul{
     list-style: none;
     display: grid;
-    grid-template-columns:  repeat(4, 1fr);
+    grid-template-columns:  repeat(3, 1fr);
     grid-gap: 5em;
 }
 
@@ -55,6 +98,13 @@
     align-items: center;
 }
 
+.visible
+{
+    opacity: 1;
+    animation : slideFromLeft 1s linear;
+}
+
+
 @media screen and (max-width: 900px){
     
     .skills{
@@ -63,14 +113,21 @@
     }
 
     .skill-info h1{
-        font-size: 18px;
+        font-size: 11px;
     }
     .skills .skill-info p{
-        font-size: 10px;
+        font-size: 8px;
+        line-height: 1rem
     }
 
     .svg_list ul{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
     }
+    /* taille des svg*/
+    .li_items svg{
+        width: 40px;
+        height: 40px;   
+    }
+
 }
