@@ -20,6 +20,10 @@
     animation: titleAnimate 4s linear;
 }
 
+.project_content{
+    background-color: #2e2d2d54;
+}
+
 .card-container
 {
     padding: 4rem 0;
