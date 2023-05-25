@@ -35,7 +35,7 @@ const observerSvg = new IntersectionObserver(function(entries){
     {
         if(entries[i].isIntersecting)
         {
-            entries[i].target.classList.add("visible");
+            entries[i].target.classList.add("visibleSvg");
         }
     }
 }, {
@@ -44,3 +44,4 @@ const observerSvg = new IntersectionObserver(function(entries){
 
 // observer un élément
 observerSvg.observe(document.querySelector(".skills .svg_list"));
+

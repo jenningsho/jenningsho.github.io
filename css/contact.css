@@ -9,8 +9,9 @@
     align-items: center;
     height: 100vh;  
     background-color: black; 
+
 }
 
 .form_class p:first-of-type{
-    color: red;
+    color: white;
 }
