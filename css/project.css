@@ -3,11 +3,12 @@
 }
 
 .project_info p{
+    
     font-size: 16px;
 }
 
 .project_info{
-    background-color: grey;
+    background-color: #001f33;
     height: 100vh;
     /* border: 2px solid red; */
     display:flex;
@@ -21,7 +22,8 @@
 }
 
 .project_content{
-    background-color: #2e2d2d54;
+    background-color: #051622;
+    border-top: 1px solid #deb992;
 }
 
 .card-container
@@ -29,13 +31,13 @@
     padding: 4rem 0;
     display: grid;
     width: 80vw;
-    margin: 2rem auto;
+    margin:  auto;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     column-gap: 2rem;
 }
 .card
 {
-    border: 1px solid #a70819;
+    border: 1px solid  #DEB992;
     margin-bottom: 3rem;
     display: grid;
     grid-template-rows: 1fr auto 1.5rem;
@@ -46,7 +48,7 @@
 }
 .card .footer
 {
-    background-color: #a70819;
+    background-color:  #DEB992;
 }
 .card img
 {
@@ -56,13 +58,17 @@
 }
 
 .card .info h3{
-    color:#a70819;
+    color: #DEB992;
 }
 .card .info p{
-    color:black;
+  
     font-size: 18px;
     letter-spacing: 2px;
+    color:  #869ba9;;
 }
+
+
+
 
 
 

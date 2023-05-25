@@ -27,12 +27,14 @@ footer .copy {
 
 footer{
     grid-area : 3 / 1 / 5 / 13 ;
+    background-color: #051622;
     display : flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     opacity: 0;
     transition: opacity 1s linear;
+    border-top: 1px solid #deb992;
 }
 .visible
 {
@@ -43,9 +45,7 @@ footer{
     text-align: center;
     line-height: 3rem;
 }
-.share p{
-    color: black
-}
+
 
 .footer_link ul{
     list-style: none;
@@ -65,9 +65,9 @@ footer{
     
 }
 
-.copyright p{
-    color: black;
+.copyright p, .share p{
     letter-spacing: 1px;
+    color: #869ba9;
 }
 
 

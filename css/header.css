@@ -1,5 +1,5 @@
 header{
-    background: #a70819;
+    background: #1BA098;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ header{
     display: flex;
 }
 .navbar .nav-links ul li:hover a{
-    color:#a70819;
+    color:#1BA098;
 }
 .nav-links{
     z-index: 4;

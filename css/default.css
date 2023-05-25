@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Poppins";
+    font-family: "BrandonTextWeb-Bold,sans-serif";
 }
 
 /*  le defilement est doux  */
@@ -17,12 +17,13 @@ html {
 
 h1{
     font-size: 50px;  
-    color:#a70819;
+    color:#DEB992;
     letter-spacing: 1px;
 }
 
 p{
-    color: rgb(255, 255, 255);
+    font-size: 20px;
+    color: #DEB992;
 }
 
 /* Grid de 12 colomnes et 4 lignes*/
@@ -32,8 +33,9 @@ p{
     grid-template-rows: repeat(4,1fr);
 }
 
-/* 
+/*
 *{
     box-shadow:  0 0 0 3px red inset;
 } */
+
 
