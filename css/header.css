@@ -1,5 +1,5 @@
 header{
-    background: #1BA098;
+    background: #a70819;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,11 +20,28 @@ header{
 .navbar a{
     color: rgb(255, 255, 255);
 }
+
+.navbar a:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #a70819;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .navbar .nav-links ul{
     display: flex;
 }
 .navbar .nav-links ul li:hover a{
-    color:#1BA098;
+    color:#a70819;
 }
 .nav-links{
     z-index: 4;
@@ -63,13 +80,6 @@ margin-left: 0; /* position quand la classe mobile-menu sera active*/
     font-size: 2rem;
     font-weight: bold;
     grid-area: 1 / 1 / 1 / 1;
-    color: white;
     z-index: 99;
 }
 
-/* longueur max 900px en mobile*/
-@media screen and (max-width: 900px){
-    .logo{
-        font-size: 20px;
-    }
-}

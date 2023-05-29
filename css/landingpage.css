@@ -1,7 +1,7 @@
 .main_class{
     /*   grid-area: row-start / column-start / row-end / column-end
     */
-    grid-area : 1 / 1 / 3 / 13 ;
+    grid-area : 1 / 1 / 5 / 13 ;
     position: relative;
 }
 
@@ -23,9 +23,13 @@
 }
 
 .welcome h1{
-    font-size: 7rem;
+    font-size: 4rem;
+    color: white;
 }
 
+.welcome h1 span{
+    color: red;
+}
 /* Animation sur le titre*/
 @keyframes welcome {
     0%{
@@ -40,9 +44,11 @@
 /*  Version mobile */
 @media screen and (max-width: 900px)
 {   
-
+    .welcome{
+        text-align: center;
+    }
     .welcome h1{
-        font-size: 22px;
+        font-size: 19px;
         animation: welcome_mobile 4s ease;
     }
         /* Animation sur le titre*/
@@ -57,7 +63,7 @@
         }
         50%{
             opacity: 0.5;
-            transform: scale(3);
+            transform: scale(2);
         }
         100%{
             opacity: 1;

@@ -1,124 +1,153 @@
 /* position absolute pour faire remonter le footer */
 .about-me_main_class{
     grid-area: 1 / 1 / 3 / 13;
-    
-}
 
+}
 
 /*  Mise en forme: flebox et image. */
 .about-me{
-    /* background-image: url('/ressources/images/david-schultz-SrewPUfo2c0-unsplash.jpg');
-    background-size:cover; */
-    background-color: #001f33;
+    background-image: url('../ressources/images/space.jpg');
+    background-size: auto;
+    background-color:white;
     display:flex;
+    flex-direction: column;
     align-items: center;
     height: 130vh;
+    animation: move-bg 40s linear infinite;
 }
-/*
 
-*/
+@keyframes move-bg {
+    0%{
+        background-position: center 0;
+    }
+    100%{
+        background-position: center -500px;
+    }
+}
+.about-me-title{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenu des deux div */
+.about-me-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 0;
+    
+}
 /*  Premiere div : positionnement et la mise en forme */
-.about-me .about-me-content_first{
+.about-me-content_first{
     flex:1;
     text-align: left;
     margin-left: 40px;
-    animation : slideFromLeft 1s linear;
+    opacity: 0;
 }
-
 @keyframes slideFromLeft {
     0%{
         transform: translateX(-100%);
+        opacity: 0;
     }
     100%{
         transform: translateX((100%));
+        opacity: 1;
     }
-    
 }
-
-
-.about-me .about-me-content_first h1{
-    font-size: 3rem;
+.about-me-content_first h2{
+    letter-spacing: 5px;
+    color: #616161;
 }
-.about-me .about-me-content_first p{
-    color: rgba(221, 221, 36, 0.699);
+.about-me-content_first p{
+    color: #deb992;
     font-size: 22px;
     line-height: 3;
     letter-spacing: 10px;
-
 }
 /*  Deuxieme div : positionnement et la mise en forme*/
-.about-me div:last-child{
+.about-me-content_second{
     flex:1;
     text-align: left;
     margin-right:30px;
-    animation : slideFromRight 1s linear;
+    opacity: 0;
 }
 
 @keyframes slideFromRight {
     0%{
+        opacity: 0;
         transform: translateX(100%);
     }
     100%{
+        opacity: 1;
         transform: translateX((-100%));
     }
     
 }
-.about-me div:last-child p{
+.about-me-content_second p{
     font-size: 25px;
     line-height: 70px;
     letter-spacing: 2px;
 }
 
+/* class après l'observe active*/
+.visible{
+    opacity: 1;
+}
+.animateFromLeft{
+    animation : slideFromLeft 1s linear;
+}
+.animateFromRight{
+    animation : slideFromRight 1s linear;
+}
 
 
-
+/* **************** Mobile à 900px ******************* */
 /* longueur max 900px en mobile*/
 @media screen and (max-width: 900px){
-    .about-me{
-        height: 100vh;
+    .about-me
+    {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 10px 0;
+        justify-content: space-around;
+    }
+    .about-me-title{
+        padding-top: 200px;
+        height: 0;
     }
 
+    .about-me-title h1{
+        font-size: 30px;
+    }
+    /* centrer le premier contenu*/
     .about-me-content_first{
-        display:flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-
-    .about-me-content_second{
-        display:flex;
-        flex-direction: column;
-        justify-content:start;
-    }
-
-    .about-me div:first-child{
-        text-align: center;
         margin-left: 0;
     }
-    .about-me div:first-child h1{
-        font-size: 28px;
-        padding: 0 40px;
-    }
-    .about-me div:first-child p{
-        font-size: 8px;
-        line-height: 5;
-        letter-spacing: 3px;
-        
-    }
-
-    .about-me-content_second{
+    .about-me-content_first h2{
+        font-size: 15px;
         text-align: center;
-        padding: 50px 0;
-        margin : 0 20px;
     }
-    .about-me div:last-child p{
-        
+    .about-me-content_first p{
         font-size: 10px;
-        line-height: 30px;
-        letter-spacing: 1px;
-        padding: 0 40px;
+        text-align: center;
+    }
+    /* centrer le deuxieme contenu*/
+    .about-me-content_second{
+        margin-right: 0;
+        padding: 100px 0;
+    }
+    /* description de moi */
+    .about-me-content_second p {
+        font-size: 12px;
+        line-height: 1;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; 
+    }
+    /* On repasse le container en colonne */
+    .about-me-content{
+        flex-direction: column;
     }
 }
 
