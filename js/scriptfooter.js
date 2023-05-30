@@ -1,14 +1,4 @@
 "use strict";
-// Menu hamburger evenement au click
-const menuHamburger = document.querySelector(".menu-hamburger");
-const navLinks = document.querySelector(".nav-links");
- 
-menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-});
-
-
-
 // Observer sur le footer 
 const observer = new IntersectionObserver(function(entries){
     // console.log(entries);
@@ -25,5 +15,3 @@ const observer = new IntersectionObserver(function(entries){
 
 // observer un élément
 observer.observe(document.querySelector("footer"));
-
-

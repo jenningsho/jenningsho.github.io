@@ -31,12 +31,12 @@
     color: red;
 }
 /* Animation sur le titre*/
-@keyframes welcome {
+@keyframes welcome{
     0%{
         opacity: 0;
     }
     100%{
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
