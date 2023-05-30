@@ -1,33 +1,6 @@
-/* footer{
-    
-    grid-area: row-start / column-start / row-end / column-end
-    
-    grid-area: 3 / 1 / 5 / 13 ;
-    border: 5px solid green;
-    background-color: grey;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .share p{
-    text-align: center;
-}
-footer .share ul{
-    text-align: center;
-}
-
-footer .copy {
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-} */
-
 footer{
     grid-area : 3 / 1 / 5 / 13 ;
-    background-color: #051622;
+    background-color: #27232380;
     display : flex;
     flex-direction: column;
     justify-content: space-around;
@@ -67,7 +40,7 @@ footer{
 
 .copyright p, .share p{
     letter-spacing: 1px;
-    color: #869ba9;
+    color: White;
 }
 
 

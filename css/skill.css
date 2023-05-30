@@ -1,13 +1,11 @@
 /*  Mise en forme du main */
 .skill_main_class{
     grid-area: 1 / 1 / 3 / 13;
-   
 }
 
 .skills{
-    /* background-image: url('../ressources/images/backgroundSkill.png');
-    background-size: cover; */
-    background-color: #001f33;
+    background-image: url('../ressources/images/space.jpg');
+    background-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -15,6 +13,16 @@
     height: auto;
     padding-top: 50px;
     padding-bottom: 200px;
+    animation: move-bg 40s linear infinite;
+}
+
+@keyframes move-bg {
+    0%{
+        background-position: center 0;
+    }
+    100%{
+        background-position: center -500px;
+    }
 }
 .skill-info{
     padding: 100px;
@@ -47,6 +55,7 @@
 .skills .skill-info p:nth-of-type(odd){
     animation : slideFromRight 2s linear;
 }
+/*  Animations sur la description */
 @keyframes slideFromLeft {
     0%{
         transform: translateX(-100%);
@@ -100,7 +109,7 @@
     align-items: center;
 }
 
-/* */
+/* animaton au moment de l'observer active */
 .visibleSvg
 {
     opacity: 1;
@@ -110,7 +119,7 @@
 
 
 
-
+/* ********* Mobile 900px *************** */
 @media screen and (max-width: 900px){
     
     .skills{
@@ -119,12 +128,13 @@
     }
 
     .skill-info h1{
-        font-size: 11px;
+        font-size: 30px;
         text-align: center;
     }
     .skills .skill-info p{
-        font-size: 8px;
-        line-height: 1rem
+        font-size: 18px;
+        line-height: 3rem;
+        letter-spacing:1px;
     }
 
     .svg_list ul{

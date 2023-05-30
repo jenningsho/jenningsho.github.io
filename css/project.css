@@ -3,22 +3,42 @@
 }
 
 .project_info p{
-    
-    font-size: 16px;
+    padding: 100px 0;
+    font-size: 30px;
 }
 
 .project_info{
-    background-color: #001f33;
+    background: url('../ressources/images/space.jpg') repeat-y;
+    background-size: auto;
     height: 100vh;
     /* border: 2px solid red; */
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px 0;
+    animation: move-bg 40s linear infinite;
+}
+@keyframes move-bg {
+    0%{
+        background-position: center 0;
+    }
+    100%{
+        background-position: center -500px;
+    }
 }
 
-.project_info h1{
+.project_info h2{
     animation: titleAnimate 4s linear;
+}
+/* Animation sur le titre*/
+@keyframes titleAnimate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 .project_content{
@@ -32,6 +52,7 @@
     display: grid;
     width: 80vw;
     margin:  auto;
+    /*  fonction minmax pour spécifier le width minimum pour les colonnes*/
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     column-gap: 2rem;
 }
@@ -61,25 +82,22 @@
     color: #DEB992;
 }
 .card .info p{
-  
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color:  #869ba9;;
 }
 
-
-
-
-
-
-
-
-/* Animation sur le titre*/
-@keyframes titleAnimate {
-    0%{
-        opacity: 0;
+@media screen and (max-width:900px) {
+    .project_info h2{
+        font-size: 30px;
     }
-    100%{
-        opacity: 100%;
+    .project_info p{
+        padding-top: 200px;
+        padding-bottom: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    .project_info{
+        height: 50vh;
     }
 }
