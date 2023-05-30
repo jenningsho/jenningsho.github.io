@@ -1,13 +1,13 @@
 footer{
     grid-area : 3 / 1 / 5 / 13 ;
-    background-color: #27232380;
     display : flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     opacity: 0;
     transition: opacity 1s linear;
-    border-top: 1px solid #deb992;
+    border-top: 1px solid #fdd700;
+    margin: 100px;
 }
 .visible
 {

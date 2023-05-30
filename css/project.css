@@ -2,14 +2,18 @@
     grid-area : 1 / 1 / 3 / 13;
 }
 
+.grid{
+    background: url('../ressources/images/space.jpg') repeat-y;
+    background-size: auto;
+     animation: move-bg 40s linear infinite;
+}
+
 .project_info p{
     padding: 100px 0;
     font-size: 30px;
 }
 
 .project_info{
-    background: url('../ressources/images/space.jpg') repeat-y;
-    background-size: auto;
     height: 100vh;
     /* border: 2px solid red; */
     display:flex;
@@ -17,7 +21,7 @@
     justify-content: center;
     align-items: center;
     padding: 200px 0;
-    animation: move-bg 40s linear infinite;
+   
 }
 @keyframes move-bg {
     0%{
@@ -42,8 +46,8 @@
 }
 
 .project_content{
-    background-color: #051622;
     border-top: 1px solid #deb992;
+    margin: 100px;
 }
 
 .card-container
@@ -75,7 +79,7 @@
 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .card .info h3{
@@ -84,7 +88,7 @@
 .card .info p{
     font-size: 18px;
     letter-spacing: 1px;
-    color:  #869ba9;;
+    color:#869ba9;
 }
 
 @media screen and (max-width:900px) {

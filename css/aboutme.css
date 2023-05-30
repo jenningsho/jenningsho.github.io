@@ -4,16 +4,17 @@
 
 }
 
-/*  Mise en forme: flebox et image. */
-.about-me{
+.grid{
     background-image: url('../ressources/images/space.jpg');
     background-size: auto;
-    background-color:white;
+    animation: move-bg 40s linear infinite;
+}
+/*  Mise en forme: flexbox et image. */
+.about-me{
     display:flex;
     flex-direction: column;
     align-items: center;
     height: 130vh;
-    animation: move-bg 40s linear infinite;
 }
 
 @keyframes move-bg {
@@ -57,10 +58,10 @@
 }
 .about-me-content_first h2{
     letter-spacing: 5px;
-    color: #616161;
+    color: #ffffff;
 }
 .about-me-content_first p{
-    color: #deb992;
+    color: #fdd700;
     font-size: 22px;
     line-height: 3;
     letter-spacing: 10px;
