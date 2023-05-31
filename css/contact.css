@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: auto;  
+    height: 100vh;  
 }
 
 .form_class div:nth-of-type(1) p:nth-of-type(1){
