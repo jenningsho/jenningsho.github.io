@@ -1,13 +1,10 @@
 /* position absolute pour faire remonter le footer */
 .about-me_main_class{
     grid-area: 1 / 1 / 4 / 13;
+
 }
 
-.grid{
-    background-image: url('../ressources/images/space.jpg');
-    background-size: auto;
-    animation: move-bg 40s linear infinite;
-}
+
 /*  Mise en forme: flexbox et image. */
 .about-me{
     display:flex;
@@ -15,14 +12,6 @@
     align-items: center;
 }
 
-@keyframes move-bg {
-    0%{
-        background-position: center 0;
-    }
-    100%{
-        background-position: center -500px;
-    }
-}
 .about-me-title{
     display: flex;
     align-items: center;

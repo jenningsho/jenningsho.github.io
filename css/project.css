@@ -2,12 +2,6 @@
     grid-area: 1 / 1 / 5 / 13;
 }
 
-.grid{
-    background: url('../ressources/images/space.jpg') repeat-y;
-    background-size: auto;
-    animation: move-bg 40s linear infinite;
-}
-
 .project_info p{
     padding: 100px 0;
     font-size: 30px;
@@ -22,14 +16,7 @@
     align-items: center;
     padding: 200px 0;
 }
-@keyframes move-bg {
-    0%{
-        background-position: center 0;
-    }
-    100%{
-        background-position: center -500px;
-    }
-}
+
 
 .project_info h2{
     animation: titleAnimate 4s linear;
