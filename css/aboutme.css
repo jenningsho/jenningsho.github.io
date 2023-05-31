@@ -1,6 +1,6 @@
 /* position absolute pour faire remonter le footer */
 .about-me_main_class{
-    grid-area: 1 / 1 / 5 / 13;
+    grid-area: 1 / 1 / 4 / 13;
 }
 
 .grid{
