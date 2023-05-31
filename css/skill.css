@@ -82,7 +82,15 @@
     }
 }
 
+.svg_list ul .li_items:hover{
+    animation : bouncing 0.5s 0.3s;
+}
+@keyframes bouncing {
 
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
 
 /*  Mise en forme du bloc des svg*/
 .svg_list{
