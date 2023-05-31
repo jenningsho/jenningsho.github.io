@@ -32,6 +32,15 @@ footer{
     width: 60px;
 }
 
+.footer_link ul li img:hover{
+    animation : bouncing 0.5s .3s;
+}
+@keyframes bouncing {
+
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
 .copyright{
     text-align: center;
     font-weight: bolder;
@@ -45,28 +54,30 @@ footer{
 
 
 
+
 @media screen and (max-width: 900px){
     footer{
         justify-content: center;
         align-items: center;
-
+        
     }
     .share p img{
         height: 18px;
 
     }
     .share p{
-        font-size: 10px;
+        font-size: 18px;
+        margin: 100px 0;
     }
     
     .footer_link ul li img{
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
     }
     
 
     .copyright p{
-        padding-top: 20px;
-        font-size: 10px;
+        margin: 100px 0;
+        font-size: 18px;
     }
 }

@@ -97,10 +97,14 @@
     .project_info p{
         padding-top: 200px;
         padding-bottom: 0;
-        font-size: 20px;
+        font-size: 14px;
         text-align: center;
     }
     .project_info{
         height: 50vh;
+    }
+    
+    .project_content{
+        margin: 0;
     }
 }

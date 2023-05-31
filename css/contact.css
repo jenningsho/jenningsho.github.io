@@ -17,7 +17,6 @@
 }
 
 .form_class{
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,4 +34,19 @@
 
 .form_class div:nth-of-type(3) p:nth-of-type(1){
     margin: 200px 0;
+}
+
+@media screen and (max-width: 900px){
+    .form_class div:nth-of-type(1) p:nth-of-type(1)
+    {
+        font-size: 18px
+    }
+    .form_class div:nth-of-type(2) p:nth-of-type(1)
+    {   
+        padding: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
 }
