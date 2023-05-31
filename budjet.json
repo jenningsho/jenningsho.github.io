@@ -1,0 +1,14 @@
+[
+    {
+        "path: " : "/",
+        "timings": [
+            {
+                "metric" : "Contenu multimédia",
+                "budget": 1463
+            },
+            {
+                "metric" :""
+            }
+        ]
+    }
+]

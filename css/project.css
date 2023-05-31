@@ -5,7 +5,7 @@
 .grid{
     background: url('../ressources/images/space.jpg') repeat-y;
     background-size: auto;
-     animation: move-bg 40s linear infinite;
+    animation: move-bg 40s linear infinite;
 }
 
 .project_info p{
@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     padding: 200px 0;
-   
 }
 @keyframes move-bg {
     0%{
