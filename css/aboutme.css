@@ -1,6 +1,6 @@
 /* position absolute pour faire remonter le footer */
 .about-me_main_class{
-    grid-area: 1 / 1 / 4 / 13;
+    grid-area: 1 / 1 / 5 / 13;
 
 }
 
@@ -44,21 +44,23 @@
         opacity: 1;
     }
 }
-.about-me-content_first h2{
+/* .about-me-content_first h2{
     letter-spacing: 5px;
     color: #ffffff;
-}
+} */
 .about-me-content_first p{
-    color: #fdd700;
-    font-size: 22px;
-    line-height: 3;
-    letter-spacing: 10px;
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    margin: 0 30px;
 }
 /*  Deuxieme div : positionnement et la mise en forme*/
 .about-me-content_second{
     flex:1;
     text-align: left;
-    margin-right:30px;
+    
+    margin: 0 30px;
     opacity: 0;
 }
 
@@ -77,6 +79,7 @@
     font-size: 25px;
     line-height: 70px;
     letter-spacing: 2px;
+    margin: 0 30px;
 }
 
 /* class après l'observe active*/
