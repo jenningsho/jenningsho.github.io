@@ -52,6 +52,7 @@ p{
     background: url('../ressources/images/space.jpg') repeat-y;
     background-size: cover;
     animation: move-bg 40s linear infinite;
+    height: 200vh;
 }
 
 @keyframes move-bg {

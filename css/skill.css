@@ -1,6 +1,7 @@
 /*  Mise en forme du main */
 .skill_main_class{
     grid-area: 1 / 1 / 5 / 13;
+    overflow: hidden;
 }
 
 .skills{
