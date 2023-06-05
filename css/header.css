@@ -15,6 +15,11 @@ header{
     /* grid-area : 1 / 12 / 6 / 12 */
 }
 
+header img{
+    width: 50px;
+    height: 50px;
+}
+
 /* BARRE DE NAVIGATION */
 /* couleur des a du navbar*/
 .navbar a{
