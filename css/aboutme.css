@@ -56,9 +56,10 @@
 .about-me-content_second{
     flex:1;
     text-align: left;
-    
     margin: 0 30px;
     opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 /* @keyframes slideFromRight {
