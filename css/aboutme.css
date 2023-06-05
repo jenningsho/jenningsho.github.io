@@ -1,7 +1,6 @@
 /* position absolute pour faire remonter le footer */
 .about-me_main_class{
     grid-area: 1 / 1 / 5 / 13;
-
 }
 
 
@@ -32,21 +31,19 @@
     flex:1;
     text-align: left;
     margin-left: 40px;
-    /* opacity: 0; */
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
-@keyframes slideFromLeft {
+/* @keyframes slideFromLeft {
     0%{
         transform: translateX(-100%);
-        /* opacity: 0; */
+        opacity: 0;
     }
     100%{
         transform: translateX((100%));
-        /* opacity: 1; */
+        opacity: 1;
     }
-}
-/* .about-me-content_first h2{
-    letter-spacing: 5px;
-    color: #ffffff;
 } */
 .about-me-content_first p{
     color: white;
@@ -61,20 +58,20 @@
     text-align: left;
     
     margin: 0 30px;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
-@keyframes slideFromRight {
+/* @keyframes slideFromRight {
     0%{
-        /* opacity: 0; */
+        opacity: 0;
         transform: translateX(100%);
     }
     100%{
-        /* opacity: 1; */
+        opacity: 1;
         transform: translateX((-100%));
     }
     
-}
+} */
 .about-me-content_second p{
     font-size: 25px;
     line-height: 70px;
@@ -83,15 +80,15 @@
 }
 
 /* class après l'observe active*/
-.visible{
-    /* opacity: 1; */
+/* .visible{
+    opacity: 1;
 }
 .animateFromLeft{
     animation : slideFromLeft 1s linear;
 }
 .animateFromRight{
     animation : slideFromRight 1s linear;
-}
+} */
 
 
 /* **************** Mobile à 900px ******************* */

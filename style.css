@@ -2,11 +2,11 @@
 @import url("./css/header.css"); /* css comportant le header ( logo , menu hamburger) */
 @import url("./css/footer.css"); /*css footer : se trouve sur toute les pages*/
 @import url("./css/landingpage.css"); /* css 1ere page */
-@import url('./css/animation_circle.css'); /* chargement de l'animation des cercles avant l'ouverture des pages */
 @import url("./css/aboutme.css"); /* présentation de moi meme */
 @import url("./css/skill.css"); /* Compétences */
 @import url("./css/project.css"); /* Projets */
 @import url("./css/contact.css"); /* Formulaire */
+@import url('./css/animations.css'); /* chargement de l'animation des cercles avant l'ouverture des pages */
 
 
 

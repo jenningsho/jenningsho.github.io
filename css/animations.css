@@ -1,3 +1,42 @@
+/*  Animations transitions des texte , svg... */
+/* class après l'observe active*/
+.visible{
+    opacity: 1;
+}
+.animateFromLeft{
+    animation : slideFromLeft 1s linear;
+}
+.animateFromRight{
+    animation : slideFromRight 1s linear;
+}
+
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX((100%));
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX((-100%));
+    }
+    
+}
+
+
+
+
+/*  Animations Circles */
 .circle-group{
     position: absolute;
     bottom: -50%;
