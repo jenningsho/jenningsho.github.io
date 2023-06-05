@@ -32,12 +32,12 @@
     flex:1;
     text-align: left;
     margin-left: 40px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 @keyframes slideFromLeft {
     0%{
         transform: translateX(-100%);
-        opacity: 0;
+        /* opacity: 0; */
     }
     100%{
         transform: translateX((100%));
@@ -61,12 +61,12 @@
     text-align: left;
     
     margin: 0 30px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 @keyframes slideFromRight {
     0%{
-        opacity: 0;
+        /* opacity: 0; */
         transform: translateX(100%);
     }
     100%{
