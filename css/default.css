@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: "Raleway";
+    font-family: "BrandonStyle";
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -63,4 +63,9 @@ p{
     100%{
         background-position: center -500px;
     }
+}
+
+@font-face {
+    font-family: "BrandonStyle";
+    src: url("../ressources/fonts/FontsFree-Net-Brandon.ttf") format("truetype");
 }
